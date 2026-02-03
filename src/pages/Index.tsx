@@ -13,16 +13,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Artisan Interiors Studio | Luxury Interior Design & Temple Craftsmanship</title>
+        <title>Dancing Drills Designs | Luxury Interior Design & Temple Craftsmanship</title>
         <meta 
           name="description" 
           content="Premium interior design, custom furniture, WPC panels, CNC wood cutting, and sacred temple design. Transform your space with our expert craftsmanship and modern luxury aesthetic."
         />
         <meta name="keywords" content="interior design, temple design, mandir, CNC wood cutting, WPC panels, custom furniture, luxury interiors, Indian interior design" />
-        <link rel="canonical" href="https://artisaninteriors.in" />
+        <link rel="canonical" href="https://dancingdrillsdesigns.com" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Artisan Interiors Studio | Luxury Interior Design & Temple Craftsmanship" />
+        <meta property="og:title" content="Dancing Drills Designs | Luxury Interior Design & Temple Craftsmanship" />
         <meta property="og:description" content="Premium interior design, custom furniture, WPC panels, CNC wood cutting, and sacred temple design." />
         <meta property="og:type" content="website" />
         
@@ -31,11 +31,11 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Artisan Interiors Studio",
+            "name": "Dancing Drills Designs",
             "description": "Premium interior design, custom furniture, WPC panels, CNC wood cutting, and sacred temple design.",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "123 Artisan Lane, Design District",
+              "streetAddress": "123 Dancing Drills Designs Lane, Design District",
               "addressLocality": "Mumbai",
               "addressRegion": "Maharashtra",
               "postalCode": "400001",

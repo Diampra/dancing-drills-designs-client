@@ -22,7 +22,7 @@ const Contact = () => {
       title: t.visitOurStudio,
       content: language === "hi" 
         ? "123 आर्टिसन लेन, डिज़ाइन डिस्ट्रिक्ट\nमुंबई, महाराष्ट्र 400001"
-        : "123 Artisan Lane, Design District\nMumbai, Maharashtra 400001",
+        : "123 Dancing Drills Designs Lane, Design District\nMumbai, Maharashtra 400001",
     },
     {
       icon: Phone,
@@ -32,7 +32,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: t.emailUs,
-      content: "hello@artisaninteriors.in\nprojects@artisaninteriors.in",
+      content: "hello@dancingdrillsdesigns.com\nprojects@dancingdrillsdesigns.com",
     },
     {
       icon: Clock,

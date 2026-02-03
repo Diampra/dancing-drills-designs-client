@@ -26,8 +26,8 @@ const blogPostsData: Record<string, BlogPost> = {
       <h2>2. Sustainable Materials</h2>
       <p>Eco-consciousness is no longer just a trend—it's a lifestyle. From reclaimed wood furniture to bamboo flooring and organic textiles, sustainable choices are at the forefront of modern design.</p>
       
-      <h2>3. Artisanal Craftsmanship</h2>
-      <p>There's a renewed appreciation for handcrafted elements. CNC-carved panels, hand-woven textiles, and artisan pottery add unique character and support local craftspeople.</p>
+      <h2>3. Dancing Drills Designsal Craftsmanship</h2>
+      <p>There's a renewed appreciation for handcrafted elements. CNC-carved panels, hand-woven textiles, and Dancing Drills Designs pottery add unique character and support local craftspeople.</p>
       
       <h2>4. Biophilic Design</h2>
       <p>Bringing nature indoors continues to be a major trend. Living walls, indoor gardens, natural light optimization, and organic shapes create spaces that promote well-being.</p>
@@ -102,7 +102,7 @@ const BlogPostPage = () => {
   return (
     <>
       <Helmet>
-        <title>{post.title} | Artisan Interiors Studio</title>
+        <title>{post.title} | Dancing Drills Designs</title>
         <meta name="description" content={post.excerpt} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />

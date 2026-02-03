@@ -48,7 +48,7 @@ const Header = () => {
 
           <div>
             <span className="font-serif text-xl font-semibold tracking-tight text-foreground">
-              Artisan
+              Dancing Drills Designs
             </span>
             <span className="block text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
               Interiors Studio
@@ -134,7 +134,7 @@ const Header = () => {
             <Button onClick={() => setQuoteOpen(true)}>
               {t.getQuote}
             </Button>
-                        
+
             <QuoteWizard open={quoteOpen} onClose={() => setQuoteOpen(false)} />
           </nav>
         </div>
