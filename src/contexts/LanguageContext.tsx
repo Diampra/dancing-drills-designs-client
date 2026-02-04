@@ -8,6 +8,7 @@ export interface Translations {
   home: string;
   services: string;
   templeDesign: string;
+  transformations: string;
   portfolio: string;
   blog: string;
   contact: string;
@@ -244,6 +245,7 @@ const translations: Record<Language, Translations> = {
     home: "Home",
     services: "Services",
     templeDesign: "Temple Design",
+    transformations: "Transformations",
     portfolio: "Portfolio",
     blog: "Blog",
     contact: "Contact",
@@ -470,6 +472,7 @@ const translations: Record<Language, Translations> = {
     home: "होम",
     services: "सेवाएं",
     templeDesign: "मंदिर डिज़ाइन",
+    transformations: "परिवर्तन",
     portfolio: "पोर्टफोलियो",
     blog: "ब्लॉग",
     contact: "संपर्क",

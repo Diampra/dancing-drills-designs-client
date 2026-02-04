@@ -18,6 +18,7 @@ const Header = () => {
     { name: t.home, href: "/" },
     { name: t.services, href: "/services" },
     { name: t.templeDesign, href: "/temple" },
+    { name: t.transformations, href: "/transformations" },
     { name: t.portfolio, href: "/portfolio" },
     { name: t.blog, href: "/blog" },
     { name: t.contact, href: "/contact" },
@@ -40,11 +41,11 @@ const Header = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-light flex items-center justify-center rounded-sm shadow-sm">
-            <span className="font-serif text-foreground font-bold text-lg">
-              A
-            </span>
-          </div>
+          {/* <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-light flex items-center justify-center rounded-sm shadow-sm"> */}
+          {/* <Link to="/" className="flex items-center gap-2"> */}
+            <img src="/logo-transparent.png" alt="Dancing Drills Designs" className="h-12 md:h-16" />
+          {/* </Link> */}
+          {/* </div> */}
 
           <div>
             <span className="font-serif text-xl font-semibold tracking-tight text-foreground">

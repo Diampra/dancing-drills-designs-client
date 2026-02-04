@@ -36,9 +36,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-light flex items-center justify-center">
-                <span className="font-serif text-foreground font-bold text-lg">A</span>
-              </div>
+<img src="/logo-transparent.png" alt="Dancing Drills Designs" className="h-12 md:h-16" />
               <div>
                 <span className="font-serif text-xl font-semibold tracking-tight text-primary-foreground">
                   {t.studioName}

@@ -1,30 +1,31 @@
+import { useEffect, useState } from "react";
 import BeforeAfterSlider from "./BeforeAfterSlider";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroImage from "@/assets/Gemini_Generated_Image_gmc3aygmc3aygmc3.png";
-import furnitureImage from "@/assets/furniture.jpg";
-import wpcImage from "@/assets/wpc-panels.jpg";
-import cncImage from "@/assets/cnc-cutting.jpg";
+import { apiUrl } from "@/constants/constants";
+
+type Transformation = {
+  id: string;
+  beforeImage: string;
+  afterImage: string;
+};
 
 const TransformationShowcase = () => {
   const { t } = useLanguage();
+  const [items, setItems] = useState<Transformation[]>([]);
 
-  const transformations = [
-    {
-      id: 1,
-      beforeImage: wpcImage,
-      afterImage: heroImage,
-    },
-    {
-      id: 2,
-      beforeImage: cncImage,
-      afterImage: furnitureImage,
-    },
-  ];
+  useEffect(() => {
+    fetch(`${apiUrl}/transformations`)
+      .then((r) => r.json())
+      .then(setItems)
+      .catch(() => setItems([]));
+  }, []);
+
+  if (items.length === 0) return null; // hide section if empty
 
   return (
     <section id="transformations" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
-        {/* Section Header */}
+        {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="w-12 h-px bg-gold" />
@@ -33,7 +34,7 @@ const TransformationShowcase = () => {
             </span>
             <div className="w-12 h-px bg-gold" />
           </div>
-          <h2 className="font-serif text-3xl md:text-5xl text-foreground font-medium mb-4">
+          <h2 className="font-serif text-3xl md:text-5xl mb-4">
             {t.seeOurTransformations}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -41,9 +42,9 @@ const TransformationShowcase = () => {
           </p>
         </div>
 
-        {/* Before/After Sliders Grid */}
+        {/* Sliders */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {transformations.map((item) => (
+          {items.map((item) => (
             <BeforeAfterSlider
               key={item.id}
               beforeImage={item.beforeImage}

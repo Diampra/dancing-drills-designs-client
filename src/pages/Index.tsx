@@ -53,7 +53,7 @@ const Index = () => {
         <main>
           <Hero />
           <Services />
-          <TempleSection />
+          {/* <TempleSection /> */}
           <Portfolio />
           <TransformationShowcase />
           <Testimonials />
