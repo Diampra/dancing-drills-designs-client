@@ -92,7 +92,7 @@ export default function DesignStep({ update, next, back }: Props) {
 
       {/* Footer */}
       <div className="flex justify-between">
-        <button onClick={back}>Back</button>
+        {/* <button onClick={back}>Back</button> */}
 
         <button
           disabled={!selected}

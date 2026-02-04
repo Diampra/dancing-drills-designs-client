@@ -35,7 +35,7 @@ const Header = () => {
         bg-background
         border-b border-gold/20
         shadow-md
-        py-5
+        py-3
       "
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -75,7 +75,7 @@ const Header = () => {
 
           <div className="flex items-center gap-2 ml-2">
             <ThemeToggle variant="scrolled" />
-            <LanguageToggle variant="scrolled" />
+            {/* <LanguageToggle variant="scrolled" /> */}
           </div>
 
           {/* <Link to="/contact">

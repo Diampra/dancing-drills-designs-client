@@ -5,31 +5,15 @@ interface Props {
   data: QuoteData;
   update: (v: Partial<QuoteData>) => void;
   back: () => void;
+  next: () => void;
 }
 
-export default function UploadStep({ data, update, back }: Props) {
+export default function UploadStep({ data, update, back, next }: Props) {
   const [preview, setPreview] = useState<string | null>(null);
 
   const handleFile = (file: File) => {
     update({ image: file });
     setPreview(URL.createObjectURL(file));
-  };
-
-  const handleSubmit = async () => {
-    // Build FormData for API
-    const form = new FormData();
-
-    Object.entries(data).forEach(([key, value]) => {
-      if (value) form.append(key, value as any);
-    });
-
-    // Example API call
-    await fetch("/api/quote", {
-      method: "POST",
-      body: form,
-    });
-
-    alert("Quote submitted successfully!");
   };
 
   return (
@@ -50,14 +34,15 @@ export default function UploadStep({ data, update, back }: Props) {
         <img
           src={preview}
           className="h-48 object-contain border mt-4"
+          alt="Preview"
         />
       )}
 
       <div className="flex justify-between">
         <button onClick={back}>Back</button>
 
-        <button onClick={handleSubmit} className="btn-primary">
-          Submit
+        <button onClick={next} className="btn-primary">
+          Continue
         </button>
       </div>
     </div>
