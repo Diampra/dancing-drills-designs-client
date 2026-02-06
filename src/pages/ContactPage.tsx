@@ -157,13 +157,21 @@ const ContactPage = () => {
                 </div>
 
                 {/* Map Placeholder */}
-                <div className="h-72 bg-card shadow-soft flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-10 h-10 text-gold mx-auto mb-3" />
-                    <p className="text-muted-foreground">{t.interactiveMap}</p>
-                    <p className="text-sm text-muted-foreground/70">Mumbai, Maharashtra</p>
-                  </div>
-                </div>
+{/* Google Map */}
+<div className="h-72 bg-card shadow-soft overflow-hidden rounded-lg">
+  <iframe
+    title="Studio Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.0653271321034!2d85.00862389999999!3d24.7589492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32b3aafa0bafd%3A0xe0a31d25e0a6ca20!2sDancing%20Drills%20Designs!5e0!3m2!1sen!2sin!4v1770380563556!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="w-full h-full"
+  />
+</div>
+
               </div>
 
               {/* Contact Form */}

@@ -17,7 +17,7 @@ const Header = () => {
   const navLinks = [
     { name: t.home, href: "/" },
     { name: t.services, href: "/services" },
-    { name: t.templeDesign, href: "/temple" },
+    // { name: t.templeDesign, href: "/temple" },
     { name: t.transformations, href: "/transformations" },
     { name: t.portfolio, href: "/portfolio" },
     { name: t.blog, href: "/blog" },

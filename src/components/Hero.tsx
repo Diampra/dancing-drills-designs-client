@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      <div className="relative z-10 container mx-auto px-6 text-center py-4">
         <div className="max-w-4xl mx-auto">
           {/* Decorative Element */}
           <div className="flex items-center justify-center gap-4 mb-8 animate-fade-in">
@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: "0.8s" }}>
             <div>
-              <span className="block text-3xl md:text-4xl font-serif text-gold">15+</span>
+              <span className="block text-3xl md:text-4xl font-serif text-gold">10+</span>
               <span className="text-primary-foreground/60 text-sm">{t.yearsExperience}</span>
             </div>
             <div>
@@ -67,20 +67,20 @@ const Hero = () => {
             </div>
             <div>
               <span className="block text-3xl md:text-4xl font-serif text-gold">100+</span>
-              <span className="text-primary-foreground/60 text-sm">{t.templeDesigns}</span>
+              <span className="text-primary-foreground/60 text-sm">{t.interiorDesigning}</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <button
+      {/* <button
         onClick={scrollToServices}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-primary-foreground/60 hover:text-gold transition-colors animate-bounce"
+        className="absolute bottom-1 left-1/2 -translate-x-1/2 text-primary-foreground/60 hover:text-gold transition-colors animate-bounce"
         aria-label="Scroll to services"
       >
         <ArrowDown className="w-6 h-6" />
-      </button>
+      </button> */}
     </section>
   );
 };

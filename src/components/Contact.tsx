@@ -21,18 +21,18 @@ const Contact = () => {
       icon: MapPin,
       title: t.visitOurStudio,
       content: language === "hi" 
-        ? "123 आर्टिसन लेन, डिज़ाइन डिस्ट्रिक्ट\nमुंबई, महाराष्ट्र 400001"
-        : "123 Dancing Drills Designs Lane, Design District\nMumbai, Maharashtra 400001",
+        ? "गया-बोधगया रोड, ज्ञान दीप स्कूल के पास, केन्दुई, गया, बिहार 823001"
+        : "Gaya-Bodhgaya Road, near Gyan Deep School, Kendui, Gaya, Bihar 823001",
     },
     {
       icon: Phone,
       title: t.callUs,
-      content: "+91 98765 43210\n+91 98765 43211",
+      content: "+91 88005 70957\n+91 70618 63057",
     },
     {
       icon: Mail,
       title: t.emailUs,
-      content: "hello@dancingdrillsdesigns.com\nprojects@dancingdrillsdesigns.com",
+      content: "enquiry@dancingdrills.com",
     },
     {
       icon: Clock,
@@ -100,12 +100,12 @@ const Contact = () => {
             </div>
 
             {/* Map or Image Placeholder */}
-            <div className="h-64 bg-secondary flex items-center justify-center">
+            {/* <div className="h-64 bg-secondary flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-8 h-8 text-gold mx-auto mb-2" />
                 <p className="text-muted-foreground text-sm">{t.interactiveMap}</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}
